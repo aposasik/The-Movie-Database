@@ -1,0 +1,482 @@
+{<!-- Store this code in 'index.html' file inside the 'templates' folder-->
+
+
+
+    <!-- <head>
+        <meta charset="UTF-8">
+        <title> Index </title>
+        
+    </head>
+    
+    <body></br></br></br></br></br>
+        <div align="center">
+            <div align="center" class="border">
+                <div class="header">
+                    <h1 class="word">Index</h1>
+                </div></br></br></br>
+                <h1 class="bottom">
+                    Hi {{session.username}}!!</br></br> Welcome to the index page...
+                </h1></br></br></br>
+                <a href="{{ url_for('logout') }}" class="btn">Logout</a>
+            </div>
+        </div>
+    </body>
+    
+    </html> -->
+    
+            <!-- <div id="new-movie-form">
+                <div id="status" class="error"> </div>
+    
+                <form name="movieform" class="movie-form">
+                    <div class="form-group">
+                        <label for="title">Title:</label>
+                        <input type="text" class="form-control" id="title">
+                    </div>
+                    <div class="form-group">
+                        <label for="img">Image:</label>
+                        <input type="text" class="form-control" id="img">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="rating">Rating:</label>
+                        <input type="number" class="form-control" id="rating">
+                    </div>
+    
+                    <!-- <button type="button" id="save-new-movie" class="btn btn-primary"  Save</button>
+      OR
+      -->
+                    <!-- <input class="btn btn-sm btn-primary" type="submit" value="Save" id="save-new-movie"
+                        onClick=addMovie(movieform)>
+                </form>
+            </div> --> 
+    "dates": {
+        "maximum": "2022-04-04",
+        "minimum": "2022-02-15"
+    },
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/fOy2Jurz9k6RnJnMUMRDAgBwru2.jpg",
+            "genre_ids": [
+                16,
+                10751,
+                35,
+                14
+            ],
+            "id": 508947,
+            "original_language": "en",
+            "original_title": "Turning Red",
+            "overview": "Thirteen-year-old Mei is experiencing the awkwardness of being a teenager with a twist – when she gets too excited, she transforms into a giant red panda.",
+            "popularity": 5329.202,
+            "poster_path": "/qsdjk9oAKSQMWs0Vt5Pyfh6O4GZ.jpg",
+            "release_date": "2022-03-01",
+            "title": "Turning Red",
+            "video": false,
+            "vote_average": 7.5,
+            "vote_count": 1433
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/x747ZvF0CcYYTTpPRCoUrxA2cYy.jpg",
+            "genre_ids": [
+                28,
+                12,
+                878
+            ],
+            "id": 406759,
+            "original_language": "en",
+            "original_title": "Moonfall",
+            "overview": "A mysterious force knocks the moon from its orbit around Earth and sends it hurtling on a collision course with life as we know it.",
+            "popularity": 4501.778,
+            "poster_path": "/odVv1sqVs0KxBXiA8bhIBlPgalx.jpg",
+            "release_date": "2022-02-03",
+            "title": "Moonfall",
+            "video": false,
+            "vote_average": 6.4,
+            "vote_count": 495
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/egoyMDLqCxzjnSrWOz50uLlJWmD.jpg",
+            "genre_ids": [
+                28,
+                878,
+                35,
+                10751
+            ],
+            "id": 675353,
+            "original_language": "en",
+            "original_title": "Sonic the Hedgehog 2",
+            "overview": "After settling in Green Hills, Sonic is eager to prove he has what it takes to be a true hero. His test comes when Dr. Robotnik returns, this time with a new partner, Knuckles, in search for an emerald that has the power to destroy civilizations. Sonic teams up with his own sidekick, Tails, and together they embark on a globe-trotting journey to find the emerald before it falls into the wrong hands.",
+            "popularity": 3032.171,
+            "poster_path": "/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg",
+            "release_date": "2022-03-30",
+            "title": "Sonic the Hedgehog 2",
+            "video": false,
+            "vote_average": 7.8,
+            "vote_count": 122
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/ewUqXnwiRLhgmGhuksOdLgh49Ch.jpg",
+            "genre_ids": [
+                28,
+                12,
+                35,
+                878
+            ],
+            "id": 696806,
+            "original_language": "en",
+            "original_title": "The Adam Project",
+            "overview": "After accidentally crash-landing in 2022, time-traveling fighter pilot Adam Reed teams up with his 12-year-old self on a mission to save the future.",
+            "popularity": 2289.346,
+            "poster_path": "/wFjboE0aFZNbVOF05fzrka9Fqyx.jpg",
+            "release_date": "2022-03-11",
+            "title": "The Adam Project",
+            "video": false,
+            "vote_average": 7,
+            "vote_count": 1555
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/2hGjmgZrS1nlsEl5PZorn7EsmzH.jpg",
+            "genre_ids": [
+                28,
+                53
+            ],
+            "id": 823625,
+            "original_language": "en",
+            "original_title": "Blacklight",
+            "overview": "Travis Block is a shadowy Government agent who specializes in removing operatives whose covers have been exposed. He then has to uncover a deadly conspiracy within his own ranks that reaches the highest echelons of power.",
+            "popularity": 1932.649,
+            "poster_path": "/bv9dy8mnwftdY2j6gG39gCfSFpV.jpg",
+            "release_date": "2022-02-10",
+            "title": "Blacklight",
+            "video": false,
+            "vote_average": 6,
+            "vote_count": 242
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/5P8SmMzSNYikXpxil6BYzJ16611.jpg",
+            "genre_ids": [
+                80,
+                9648,
+                53
+            ],
+            "id": 414906,
+            "original_language": "en",
+            "original_title": "The Batman",
+            "overview": "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.",
+            "popularity": 1930.728,
+            "poster_path": "/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+            "release_date": "2022-03-01",
+            "title": "The Batman",
+            "video": false,
+            "vote_average": 7.9,
+            "vote_count": 2686
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/tj4lzGgHrfjnjVqAKkLIjFqPSyO.jpg",
+            "genre_ids": [
+                28,
+                878,
+                14
+            ],
+            "id": 526896,
+            "original_language": "en",
+            "original_title": "Morbius",
+            "overview": "Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Michael Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease.",
+            "popularity": 1742.669,
+            "poster_path": "/6nhwr1LCozBiIN47b8oBEomOADm.jpg",
+            "release_date": "2022-03-30",
+            "title": "Morbius",
+            "video": false,
+            "vote_average": 5.7,
+            "vote_count": 259
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/tq3klWQevRK0Or0cGhsw0h3FDWQ.jpg",
+            "genre_ids": [
+                12,
+                16,
+                35,
+                10751,
+                14
+            ],
+            "id": 676705,
+            "original_language": "fr",
+            "original_title": "Pil's Adventures",
+            "overview": "Pil, a little vagabond girl, lives on the streets of the medieval city of Roc-en-Brume, along with her three tame weasels. She survives of food stolen from the castle of the sinister Regent Tristain. One day, to escape his guards, Pil disguises herself as a princess. Thus she embarks upon a mad, delirious adventure, together with Crobar, a big clumsy guard who thinks she's a noble, and Rigolin, a young crackpot jester. Pil is going to have to save Roland, rightful heir to the throne under the curse of a spell. This adventure will turn the entire kingdom upside down, and teach Pil that nobility can be found in all of us.",
+            "popularity": 1664.778,
+            "poster_path": "/abPQVYyNfVuGoFUfGVhlNecu0QG.jpg",
+            "release_date": "2021-08-11",
+            "title": "Pil's Adventures",
+            "video": false,
+            "vote_average": 6.8,
+            "vote_count": 37
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/yzH5zvuEzzsHLZnn0jwYoPf0CMT.jpg",
+            "genre_ids": [
+                53,
+                28
+            ],
+            "id": 760926,
+            "original_language": "en",
+            "original_title": "Gold",
+            "overview": "In the not-too-distant future, two drifters traveling through the desert stumble across the biggest gold nugget ever found and the dream of immense wealth and greed takes hold. They hatch a plan to excavate their bounty, with one man leaving to secure the necessary tools while the other remains with the gold. The man who remains must endure harsh desert elements, ravenous wild dogs, and mysterious intruders, while battling the sinking suspicion that he has been abandoned to his fate.",
+            "popularity": 1413.982,
+            "poster_path": "/ejXBuNLvK4kZ7YcqeKqUWnCxdJq.jpg",
+            "release_date": "2022-01-13",
+            "title": "Gold",
+            "video": false,
+            "vote_average": 6.5,
+            "vote_count": 162
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/lRbDyjI7HEaXxflFQbYpqHRGFBJ.jpg",
+            "genre_ids": [
+                80,
+                18,
+                9648,
+                53
+            ],
+            "id": 505026,
+            "original_language": "en",
+            "original_title": "Death on the Nile",
+            "overview": "Belgian sleuth Hercule Poirot boards a glamorous river steamer with enough champagne to fill the Nile. But his Egyptian vacation turns into a thrilling search for a murderer when a picture-perfect couple’s idyllic honeymoon is tragically cut short.",
+            "popularity": 1231.988,
+            "poster_path": "/kVr5zIAFSPRQ57Y1zE7KzmhzdMQ.jpg",
+            "release_date": "2022-02-09",
+            "title": "Death on the Nile",
+            "video": false,
+            "vote_average": 6.6,
+            "vote_count": 1048
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/qBLEWvJNVsehJkEJqIigPsWyBse.jpg",
+            "genre_ids": [
+                16,
+                10751,
+                14,
+                35,
+                12
+            ],
+            "id": 585083,
+            "original_language": "en",
+            "original_title": "Hotel Transylvania: Transformania",
+            "overview": "When Van Helsing's mysterious invention, the \"Monsterfication Ray,\" goes haywire, Drac and his monster pals are all transformed into humans, and Johnny becomes a monster. In their new mismatched bodies, Drac and Johnny must team up and race across the globe to find a cure before it's too late, and before they drive each other crazy.",
+            "popularity": 1149.71,
+            "poster_path": "/teCy1egGQa0y8ULJvlrDHQKnxBL.jpg",
+            "release_date": "2022-02-25",
+            "title": "Hotel Transylvania: Transformania",
+            "video": false,
+            "vote_average": 7.1,
+            "vote_count": 613
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/i5dUmY2xRzgkmjHJYKNj8kPX1Xx.jpg",
+            "genre_ids": [
+                37,
+                28
+            ],
+            "id": 928999,
+            "original_language": "en",
+            "original_title": "Desperate Riders",
+            "overview": "After Kansas Red rescues young Billy from a card-game shootout, the boy asks Red for help protecting his family from the outlaw Thorn, who’s just kidnapped Billy’s mother, Carol. As Red and Billy ride off to rescue Carol, they run into beautiful, tough-as-nails Leslie, who’s managed to escape Thorn’s men. The three race to stop Thorn’s wedding to Carol with guns a-blazing - but does she want to be rescued?",
+            "popularity": 1117.963,
+            "poster_path": "/7pYYGm1dWZGkbJuhcuaHD6nE6k7.jpg",
+            "release_date": "2022-02-25",
+            "title": "Desperate Riders",
+            "video": false,
+            "vote_average": 6,
+            "vote_count": 27
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/f2J8DpT5bqV0AiI9VVcfiuqKo5l.jpg",
+            "genre_ids": [
+                28,
+                99,
+                35
+            ],
+            "id": 656663,
+            "original_language": "en",
+            "original_title": "Jackass Forever",
+            "overview": "Celebrate the joy of a perfectly executed shot to the groin as Johnny Knoxville, Steve-O and the rest of the gang return alongside some newcomers for one final round of hilarious, wildly absurd and often dangerous displays of stunts and comedy.",
+            "popularity": 920.893,
+            "poster_path": "/ugIdyvtAzHWOguD91UjHKoAvfum.jpg",
+            "release_date": "2022-02-01",
+            "title": "Jackass Forever",
+            "video": false,
+            "vote_average": 7,
+            "vote_count": 207
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/xHRabofjmMGoIV3mb6xgy4nwOcS.jpg",
+            "genre_ids": [
+                27
+            ],
+            "id": 801071,
+            "original_language": "en",
+            "original_title": "The Jack in the Box: Awakening",
+            "overview": "When a vintage Jack-in-the-box is opened by a dying woman, she enters into a deal with the demon within that would see her illness cured in return for helping it claim six innocent victims.",
+            "popularity": 891.832,
+            "poster_path": "/3Ib8vlWTrAKRrTWUrTrZPOMW4jp.jpg",
+            "release_date": "2022-02-24",
+            "title": "The Jack in the Box: Awakening",
+            "video": false,
+            "vote_average": 5.8,
+            "vote_count": 29
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/tutaKitJJIaqZPyMz7rxrhb4Yxm.jpg",
+            "genre_ids": [
+                16,
+                35,
+                10751,
+                10402
+            ],
+            "id": 438695,
+            "original_language": "en",
+            "original_title": "Sing 2",
+            "overview": "Buster and his new cast now have their sights set on debuting a new show at the Crystal Tower Theater in glamorous Redshore City. But with no connections, he and his singers must sneak into the Crystal Entertainment offices, run by the ruthless wolf mogul Jimmy Crystal, where the gang pitches the ridiculous idea of casting the lion rock legend Clay Calloway in their show. Buster must embark on a quest to find the now-isolated Clay and persuade him to return to the stage.",
+            "popularity": 860.012,
+            "poster_path": "/aWeKITRFbbwY8txG5uCj4rMCfSP.jpg",
+            "release_date": "2021-12-01",
+            "title": "Sing 2",
+            "video": false,
+            "vote_average": 8.1,
+            "vote_count": 2469
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/mqDnDhG5N6fn1H4MKQqr8E5wfeK.jpg",
+            "genre_ids": [
+                80,
+                18,
+                53
+            ],
+            "id": 597208,
+            "original_language": "en",
+            "original_title": "Nightmare Alley",
+            "overview": "An ambitious carnival man with a talent for manipulating people with a few well-chosen words hooks up with a female psychiatrist who is even more dangerous than he is.",
+            "popularity": 835.281,
+            "poster_path": "/680klE0dIreQQOyWKFgNnCAJtws.jpg",
+            "release_date": "2021-12-02",
+            "title": "Nightmare Alley",
+            "video": false,
+            "vote_average": 7.1,
+            "vote_count": 1392
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/yKnjIWNIVECfMoKy1ayl68vX6qj.jpg",
+            "genre_ids": [
+                28,
+                80,
+                53
+            ],
+            "id": 871799,
+            "original_language": "en",
+            "original_title": "Pursuit",
+            "overview": "Detective Breslin crosses paths with Calloway, a ruthless hacker desperate to find his wife, who has been kidnapped by a drug cartel. When Calloway escapes police custody, Breslin joins forces with a no-nonsense female cop to reclaim his prisoner. But is Calloway’s crime-boss father somehow involved in this explosive situation?",
+            "popularity": 789.755,
+            "poster_path": "/oUU6blOmIu155vfIgzML3ZSsDrB.jpg",
+            "release_date": "2022-02-18",
+            "title": "Pursuit",
+            "video": false,
+            "vote_average": 5.7,
+            "vote_count": 34
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/g3UTK29RMThW0OIvWTLDfSPCHSV.jpg",
+            "genre_ids": [
+                27,
+                9648,
+                53
+            ],
+            "id": 646385,
+            "original_language": "en",
+            "original_title": "Scream",
+            "overview": "Twenty-five years after a streak of brutal murders shocked the quiet town of Woodsboro, a new killer has donned the Ghostface mask and begins targeting a group of teenagers to resurrect secrets from the town’s deadly past.",
+            "popularity": 775.204,
+            "poster_path": "/kZNHR1upJKF3eTzdgl5V8s8a4C3.jpg",
+            "release_date": "2022-01-12",
+            "title": "Scream",
+            "video": false,
+            "vote_average": 6.8,
+            "vote_count": 1116
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/cTTggc927lEPCMsWUsdugSj6wAY.jpg",
+            "genre_ids": [
+                28,
+                12
+            ],
+            "id": 335787,
+            "original_language": "en",
+            "original_title": "Uncharted",
+            "overview": "A young street-smart, Nathan Drake and his wisecracking partner Victor “Sully” Sullivan embark on a dangerous pursuit of “the greatest treasure never found” while also tracking clues that may lead to Nathan’s long-lost brother.",
+            "popularity": 677.833,
+            "poster_path": "/sqLowacltbZLoCa4KYye64RvvdQ.jpg",
+            "release_date": "2022-02-10",
+            "title": "Uncharted",
+            "video": false,
+            "vote_average": 7.1,
+            "vote_count": 903
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/8pgKccb5PfE1kWB9qqiXJem83VC.jpg",
+            "genre_ids": [
+                28,
+                53
+            ],
+            "id": 522016,
+            "original_language": "en",
+            "original_title": "The 355",
+            "overview": "A group of top female agents from American, British, Chinese, Columbian and German  government agencies are drawn together to try and stop an organization from acquiring a deadly weapon to send the world into chaos.",
+            "popularity": 638.722,
+            "poster_path": "/zxizwEPE8jhpbMgrFbwCztgvh2m.jpg",
+            "release_date": "2022-01-05",
+            "title": "The 355",
+            "video": false,
+            "vote_average": 6,
+            "vote_count": 366
+        }
+    ],
+    "total_pages": 63,
+    "total_results": 1247
+}
+
+# print('result == ', db.users.find_one({'cuisine':'Pizza'}))
+# for x in db.users.find():
+#     print("x == ", x)
+
+# names = ['Kitchen', 'Animal', 'State', 'Tastey', 'Big', 'City',
+#          'Fish', 'Pizza', 'Goat', 'Salty', 'Sandwich', 'Lazy', 'Fun']
+# company_type = ['LLC', 'Inc', 'Company', 'Corporation']
+# company_cuisine = ['Pizza', 'Bar Food', 'Fast Food',
+#                    'Italian', 'Mexican', 'American', 'Sushi Bar', 'Vegetarian']
+
+# for x in range(1, 501):
+#     business = {
+#         'name': names[randint(0, (len(names)-1))] + ' ' + names[randint(0, (len(names)-1))] + ' ' + company_type[randint(0, (len(company_type)-1))],
+#         'rating': randint(1, 5),
+#         'cuisine': company_cuisine[randint(0, (len(company_cuisine)-1))]
+#     }
+#     #Step 3: Insert business object directly into MongoDB via insert_one
+#     result = db.users.insert_one(business)

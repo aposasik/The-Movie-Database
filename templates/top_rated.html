@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title> Top Rated </title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="topnav">
+			<ul>
+				<li><a class="active" href="{{ url_for('index')}}">Now Playing</a></li>
+				<li><a href="{{ url_for('top_rated')}}">Top Rated</a></li>
+				<li><a href="{{ url_for('favourites')}}">My Favourites</a></li>
+				<div class="topnav_right">
+					<li><a href="{{ url_for('logout')}}">Logout</a></li>
+				</div>
+			</ul>
+		</div>
+		<h1>Top Rated Movies</h1>
+		<form action="{{ url_for('top_rated')}}" method="post">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Title</th>
+						<th>Poster</th>
+						<th>Release Date</th>
+						<th>Description</th>
+						<th>Favourites</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for movie in movies %}
+					<tr>
+						<td>
+							<div class="form-group" id="title">
+								{{loop.index}}. {{movie.title}}
+							</div>
+						</td>
+						<td>
+							<img src="{{ movie.image }}" style="width: 80px;height: 100px;">
+						</td>
+						<td>
+							{{movie.release_info}}
+						</td>
+						<td>
+							<textarea id="description_box">{{movie.description}}</textarea>
+						</td>
+						<td>
+							<div class="form-group">
+								{% if movie.favourite %}
+								<input name="fav" type="checkbox" class="form-control" id="comment"
+									value="{{ movie._id }}" checked=true>
+								<input type="submit" name="id" value="Add to Favourite">
+								{% else %}
+								<input name="favupdate" type="checkbox" class="form-control" id="comment"
+									value="{{ movie._id }}">
+								<input type="submit" name="id" value="Add to Favourite">
+								{% endif %}
+							</div>
+						</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</form>
+	</div>
+</body>
+
+</html>
+
+<style>
+	h1 {
+		text-align: center;
+		font-size: 36px;
+	}
+
+	table {
+		font-size: 16px;
+		border: 5px solid;
+	}
+
+	th {
+		font-size: 32px;
+		padding-right: 20px;
+		border: 5px solid;
+	}
+
+	td {
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 20px;
+		border: 5px solid;
+		border-collapse: separate;
+		border-style: outset;
+	}
+
+	td:first-child {
+		font-weight: bold;
+		font-size: 21px;
+		text-align: left;
+	}
+
+	#description_box {
+		font-family: initial;
+		font-size: 15px;
+		height: 100px;
+		width: 500px;
+		text-align: left;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+	}
+
+	li {
+		float: left;
+	}
+
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+	li a:hover {
+		background-color: #111;
+	}
+
+	.topnav_right {
+		float: right;
+	}
+</style>
